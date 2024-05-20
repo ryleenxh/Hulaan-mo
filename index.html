@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hulaan mo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .box {
+            width: 250px;
+            height: 200px;
+            background-color: #ff69b4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            border: 2px solid #ff1493;
+            position: relative;
+        }
+        .box::after {
+            content: 'Hello, railey(⁠◕⁠ᴗ⁠◕⁠✿⁠)';
+            color: white;
+            font-weight: bold;
+        }
+        .letter {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            color: #333;
+            padding: 20px;
+            box-sizing: border-box;
+            border: 2px solid #ff1493;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" onclick="openBox()">
+        <div class="letter" id="letterContent">
+            <h3>are you mitochondria? Because you're the powerhouse of my heart(⁠ ⁠ꈍ⁠ᴗ⁠ꈍ⁠)</h3> 
+            <p></p>
+            </p>
+        </div>
+    </div>
+
+    <script>
+        function openBox() {
+            var letter = document.getElementById('letterContent');
+            letter.style.display = 'flex';
+        }
+    </script>
+</body>
+</html>
